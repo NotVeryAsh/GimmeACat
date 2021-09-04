@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\PayPalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +16,5 @@ use App\Http\Controllers\PageController;
 */
 
 Route::get('/', [PageController::class, 'showMainPage']);
+
+Route::get('/donation-complete', [PayPalController::class, 'showDonationConfirmation']);
