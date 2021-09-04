@@ -30,4 +30,14 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'paypal_sandbox' => [
+        'email' => env('PAYPAL_SANDBOX_EMAIL'),
+        'client_id' => env('ATRb_wexrUUXtS-m8Xeug24EPcRvhWMV39i3kKtrdxex387N10BnCGwkrisvHB2B10ljU7g21iyxBzpY'),
+        'secret' => env('EAeCcKAqW9VaSDQ3ZA2RU5etIjeK0fRe2csofz_OlOxAUod-tlrLPJv8TWl27UUBtBjCn0LTdxXpY5cA'),
+    ],
+
+    'paypal_live' => [
+
+    ]
+
 ];
