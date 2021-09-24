@@ -3,7 +3,6 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\APIController;
-use App\Http\Controllers\PayPalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +15,4 @@ use App\Http\Controllers\PayPalController;
 |
 */
 
-Route::post('v1/get-random-cat', [APIController::class, 'getRandomCat']);
-
-Route::post('v1/payment/recieve', [PayPalController::class, 'recievePayment']);
+Route::post('/get-random-cat', [APIController::class, 'getRandomCat']);
